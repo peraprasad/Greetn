@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greeting Card Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img src="https://cdn.progradjunior.org/greetn/greetnlogo.svg" alt="">
+    </header>
+    <div class="image-container flex space-evenly">
+        <img id=bg1 onclick="bg1()" src="./assets/bg1.png" alt="">
+        <img id=bg2 onclick="bg2()" src="./assets/bg2.png" alt="">
+        <img id=bg3 onclick="bg3()" src="./assets/bg3.png" alt="">
+        <img id=bg4 onclick="bg4()" src="./assets/bg4.png" alt="">
+        <img id=bg5 onclick="bg5()" src="./assets/bg5.png" alt="">
+        <img id=bg6 onclick="bg6()" src="./assets/bg6.png" alt="">
+        <img id=bg7 onclick="bg7()" src="./assets/bg7.png" alt="">
+        <img id=bg8 onclick="bg8()" src="./assets/bg8.png" alt="">
+    </div>
+    <div class="canvas-container flex space-evenly">
+        <canvas id="canvas" width=700 height=400 style="background-color: rgb(0, 0, 0);">
+        </canvas>
+        <div class="message-container flex space-evenly">
+            <h2>Add a message to your card</h2>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            <div class="button-container flex space-evenly">
+                <div id="button">Generate card</div>
+            </div>
+        </div>
+    </div>
+    <footer class="flex space-evenly">
+        <div id="clear">Clear</div>
+        <div id="download-button"><a id="download" download="myGreetn.jpg" href="">Download</a></div>
+    </footer>
+    <script src="./app.js"></script>
+</body>
+
+</html>
